@@ -1,6 +1,6 @@
 (defproject net.shisoft.shfs.server "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "A Simple Small Files Distirbuted File System"
+  :url ""
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :main net.shisoft.shfs.server.main
@@ -18,12 +18,15 @@
 
                  [http-kit/dbcp "0.1.0"] ;; database access
 
-                 [mysql/mysql-connector-java "5.1.21"] ;; mysql jdbc driver
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
+                 [org.clojure/core.cache "0.6.4"]
+
+                 [postgresql "9.3-1102.jdbc41"]
 
                  ;; [org.fressian/fressian "0.6.3"]
 
                  ;; for serialization clojure object to bytes
-                 ;; [com.taoensso/nippy "1.1.0"]
+                 [com.taoensso/nippy "2.8.0"]
 
                  ;; Redis client & message queue
                  ;; [com.taoensso/carmine "1.5.0"]
